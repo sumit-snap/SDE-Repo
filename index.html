@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Thanos AI</title> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=], initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" >
+    </head>
+    <body onload="init();">
+
+            <div class="container">
+              <h2>Second Degree Equations</h2>
+        
+              <div class="well">
+                  <h3>Quadratic Equation:
+                      <span id="a">a</span>x
+                      <sup>2</sup> +
+                      <span id="b">b</span>x +
+                      <span id="c">c</span>
+                  </h3>
+                  <h4>Enter the coefficients of a, b and c</h4>
+        
+                  <div class="form-group col-lg-6 col-md-12 col-sd-12">
+                      <label for="valueA">Value of a: </label>
+                      <input type="number" min="0" placeholder="1" class="form-control" id="valueofA" onchange="updateEquation()" required="">
+                  </div>
+                  <div class="form-group col-lg-6 col-md-12 col-sd-12">
+                      <label for="valueB">Value of b: </label>
+                      <input type="number" min="0" placeholder="1" class="form-control" id="valueofB" onchange="updateEquation()" required="">
+                  </div>
+                  <div class="form-group col-lg-6 col-md-12 col-sd-12">
+                      <label for="valueC">Value of c: </label>
+                      <input type="number" min="0" placeholder="1" class="form-control" id="valueofC" onchange="updateEquation()" required="">
+                  </div>
+                  <button class="btn btn-primary" onclick="solve()">Solve Equation</button>
+              </div>
+        
+              <div class="well">
+                  Thanos Answer:
+                  <span id="result"></span>
+              </div>
+            </div>
+        
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="js.js"></script>
+        
+        
+        </body>
